@@ -1,0 +1,56 @@
+/* BODY CSS */
+body { 
+    margin: 0;
+    padding: 0;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .Container CSS */
+.container { 
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: #C850C0;
+}
+/* .Clip CSS */
+.clip { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+/* .clip1 CSS */
+.clip1 { 
+    background: url(./Rikuma.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 46% 0, 39% 100%, 0 100%);
+}
+/* .clip2 CSS */
+.clip2 { 
+    background: url(./Controller.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(19% 0, 87% 0, 64% 100%, 33% 100%);
+} 
+/* .clip3 CSS */ 
+.clip3 { 
+    background: url(./ReflectionofMe.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(82% 0, 100% 0, 100% 100%, 63% 100%);
+} 
+/* .Container:hover .clip CSS */
+.container:hover .clip { 
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+/* .container .clip:hover CSS */ 
+.container .clip:hover { 
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
